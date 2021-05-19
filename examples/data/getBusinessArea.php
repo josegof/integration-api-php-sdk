@@ -12,7 +12,7 @@ $args = array(
 
 try {
     $dataService = new \TamoJuno\Data($args);
-    $business = $dataService->getCompanyTypes();
+    $business = $dataService->getBusinessAreas();
     print_r($business);
 } catch (GuzzleClientException $e) {
     print_r($e->getResponse()->getBody()->getContents());
